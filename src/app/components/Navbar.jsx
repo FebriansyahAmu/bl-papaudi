@@ -3,7 +3,7 @@ import { useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="p-4 fixed top-0 left-0 right-0 z-10 w-full bg-gray-500">
+    <nav className="p-4 fixed  top-0 left-0 right-0 z-10 w-full bg-transparent">
       <div className="container mx-auto flex justify-between items-center">
         <a
           href=""

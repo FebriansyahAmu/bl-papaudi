@@ -3,7 +3,7 @@ import { useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="p-4 fixed  top-0 left-0 right-0 z-10 w-full bg-slate-900">
+    <nav className="p-6 fixed  top-0 left-0 right-0 z-10 w-full bg-slate-900">
       <div className="container mx-auto flex justify-between items-center">
         <a
           href=""
@@ -12,7 +12,10 @@ function Navbar() {
           <span className="italic text-orange-700">WW-</span>PapaUdi
         </a>
         <div className="hidden md:flex space-x-8 mr-11">
-          <a href="" className="text-gray-300 hover:text-orange-700">
+          <a
+            href=""
+            className="text-gray-300 hover:text-orange-700 active:text-orange-700"
+          >
             Home
           </a>
           <a href="" className="text-gray-300 hover:text-orange-700">

@@ -6,10 +6,19 @@ function About() {
       <h1 className="text-4xl text-orange-700 font-extrabold text-center mb-8">
         TENTANG KAMI
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mt-10 max-w-7xl">
         <div className="md:col-span-7">
           <h2 className="text-3xl font-semibold text-orange-700  md:text-left ">
             Welding
+          </h2>
+          <p className=" md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut
+            reprehenderit, aperiam impedit eum cupiditate amet similique
+            accusamus molestiae hic magni animi exercitationem distinctio, non
+            fugiat dicta assumenda odit excepturi?
+          </p>
+          <h2 className="text-3xl font-semibold text-orange-700 mt-16 md:text-left ">
+            Our Workshop
           </h2>
           <p className=" md:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut

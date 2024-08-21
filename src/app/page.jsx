@@ -1,11 +1,13 @@
 import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import About from "./components/About";
-import Service from "./components/Service";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import WhatsAppButton from "./components/whatsappbtn";
+import {
+  Navbar,
+  Header,
+  About,
+  Service,
+  Contact,
+  Footer,
+  WhatsAppButton,
+} from "./components";
 
 export default function Home() {
   return (

@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+        <title>Welding | papa Udi</title>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

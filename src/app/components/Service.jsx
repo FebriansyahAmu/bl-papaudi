@@ -1,9 +1,14 @@
 "use client";
-import React from "react";
 import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Service() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   const cards = [
     {
       title: "Structural Welding",
@@ -48,25 +53,49 @@ function Service() {
   }, []);
 
   return (
-    <section className="w-full h-auto flex flex-col justify-center items-center p-8 mt-14 bg-slate-800">
-      <h1 className="text-4xl text-orange-700 font-extrabold text-center mb-8">
+    <section
+      className="w-full h-auto flex flex-col justify-center items-center p-8 mt-14 bg-slate-800"
+      ref={ref}
+    >
+      <motion.h1
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={inView ? { opacity: 1, scale: 1 } : "hidden"}
+        transition={{
+          delay: 0.5,
+          duration: 0.8,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="text-4xl text-orange-700 font-extrabold text-center mb-8"
+      >
         SERVICES
-      </h1>
+      </motion.h1>
       <div className="relative w-full max-w-5xl mx-auto">
         <div
           key={currentIndex}
           className="flex flex-col sm:flex-row items-center text-white rounded-lg overflow-hidden  "
         >
-          <div className="w-full sm:w-1/2 p-6">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={inView ? { opacity: 1, x: 0 } : "hidden"}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{
+              delay: 0.8,
+              duration: 0.5,
+            }}
+            className="w-full sm:w-1/2 p-6"
+          >
             <h2 className="text-4xl text-orange-700 font-semibold mb-4">
               {cards[currentIndex].title}
             </h2>
             <p className="mb-6">{cards[currentIndex].description}</p>
-          </div>
+          </motion.div>
           <div className="w-full sm:w-1/2 flex justify-center">
-            <img
+            <motion.img
               src={cards[currentIndex].image}
               alt={cards[currentIndex].title}
+              initial={{ scale: 0.2, opacity: 0 }}
+              animate={inView ? { scale: 1, opacity: 1 } : "hidden"}
+              transtion={{ delay: 1, duration: 1 }}
               className="w-[400px] h-[400px] lg:w-[380px] lg:h-[380px] object-contain"
             />
           </div>

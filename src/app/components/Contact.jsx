@@ -46,9 +46,9 @@ function Contact() {
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31916.027521418888!2d124.26562951083983!3d0.7198410000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327e3d81336d2dfd%3A0x3d9af07a444bba7c!2sBENGKEL%20LAS%2C%20papa%20udi!5e0!3m2!1sid!2sid!4v1724172063854!5m2!1sid!2sid"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-lg"
             ></iframe>
           </motion.div>

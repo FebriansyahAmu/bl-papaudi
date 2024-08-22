@@ -67,7 +67,7 @@ function About() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={serviceVariants}
-          class="md:col-span-5"
+          className="md:col-span-5"
         >
           <img src="/images/welding-person.jpg" alt="Welding person" />
         </motion.div>

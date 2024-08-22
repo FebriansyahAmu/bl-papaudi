@@ -32,8 +32,8 @@ function Header() {
             }}
           >
             <h1 className="font-extrabold text-5xl text-white">
-              <span class="text-orange-700">PROFESIONAL</span> & HIGH QUALITY
-              WELDING
+              <span className="text-orange-700">PROFESIONAL</span> & HIGH
+              QUALITY WELDING
             </h1>
           </motion.div>
           <motion.div
